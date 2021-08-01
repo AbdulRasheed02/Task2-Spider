@@ -346,6 +346,9 @@ public class CustomViewLayout extends SurfaceView implements Runnable{
                 }
             }
         }
+        else if(cellFlag[i][j]==flagged){
+
+        }
         else if(cell[i][j]==bomb){
             cellState[i][j]=revealed;
             endgameFlag = true;
@@ -464,7 +467,6 @@ public class CustomViewLayout extends SurfaceView implements Runnable{
             j++;
             generateNeighbourReveal(i,j);
         }
-
     }
 
     private void endgame(){
