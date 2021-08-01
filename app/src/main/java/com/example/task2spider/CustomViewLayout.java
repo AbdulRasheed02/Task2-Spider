@@ -247,7 +247,7 @@ public class CustomViewLayout extends SurfaceView implements Runnable{
             float downx = event.getX();
             float downy = event.getY();
 
-            if(endgameFlag){
+            if(endgameFlag || winFlag){
                 if(downx>=btn1Background.left && downx<=btn1Background.right && downy>= btn1Background.top && downy <= btn1Background.bottom){
                     Intent Restart= new Intent(context, CustomViewActivity.class);
                     Restart.putExtra("NoviceMode", noviceMode);
